@@ -1,0 +1,117 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="text-center container col-6">
+
+
+    <h1>new product</h1>
+    <form action="/product" method="post" class="was-validated">
+        <div class="col-md-4>
+            <label for="validationServer01">Title</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" name="product[title]" required>
+            <div class="invalid-feedback">
+                Please write a title
+            </div>
+        </div>
+
+        <div>
+            <label for="validationServer02" class="form-label">Price</label>
+            <input type="number" id="validationServer02" name="product[price]" class="form-control is-valid" required>
+            <div class="invalid-feedback">
+                Only Number allow, Max:5000
+            </div>
+        </div>
+
+        <div class="mb-3 mt-3">
+            Image URL
+    <input type="text" class="form-control is-valid" id="validationServer01" name="product[image]" required>
+    <div class="invalid-feedback">Please Select an image</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">product Description</label>
+    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="please write a description about your product" name="product[description]" required></textarea>
+    <div class="invalid-feedback">
+      Please enter a description in the given box.
+    </div>
+  </div>
+
+   <div class="form-check mb-3">
+    SELECT AVAILABLE SIZES <br>
+    <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+    <label class="form-check-label" for="validationFormCheck1">SMALL</label>
+    <div class="invalid-feedback">Please select available size</div>
+  <br>
+    
+    <input type="checkbox" class="form-check-input" id="validationFormCheck2" required>
+    <label class="form-check-label" for="validationFormCheck2">MEDIUM</label>
+<br>
+
+    <input type="checkbox" class="form-check-input" id="validationFormCheck3" required>
+    <label class="form-check-label" for="validationFormCheck3">LARGE</label>
+<br>
+ 
+    <input type="checkbox" class="form-check-input">
+    <label class="" >EXTRA LARGE</label>
+  <br>
+  
+    <input type="checkbox" class="form-check-input"  >
+    <label class="" >X-EXTRA LARGE(XXL)</label>
+  </div>
+
+  <!-- FOR SIZE -->
+  <!-- <div class="form-check">
+    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck2">Select Size</label>
+  </div>
+  <div class="form-check mb-3">
+    <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck3">SMALL</label>
+    <div class="invalid-feedback">please Select Available sizes</div>
+  </div>
+  <div class="form-check mb-3">
+    <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck4">MEDIUM</label>
+    <div class="invalid-feedback">please Select Available sizes</div>
+  </div>
+  <div class="form-check mb-3">
+    <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck5">LARGE</label>
+    <div class="invalid-feedback">please Select Available sizes</div>
+  </div>
+  <div class="form-check mb-3">
+    <input type="radio" class="form-check-input" id="validationFormCheck6" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck6">EXTRA LARGE</label>
+    <div class="invalid-feedback">please Select Available sizes</div>
+  </div> --> 
+
+  <!-- <div class="mb-3">
+    <select class="form-select" required aria-label="select example">
+      <option value="1">Select Size</option>
+      <option value="1">S</option>
+      <option value="2">M</option>
+      <option value="3">L</option>
+      <option value="4">XL</option>
+      <option value="5">XXL</option>
+    </select>
+    <div class="invalid-feedback">Example invalid select feedback</div>
+  </div> -->
+
+  <!-- <div class="mb-3">
+    <input type="file" class="form-control" aria-label="file example" required>
+    <div class="invalid-feedback">Example invalid form file feedback</div>
+  </div> -->
+
+  <!-- <div class="mb-3">
+    <button class="btn btn-primary" type="submit" disabled>Submit form</button>
+    
+  </div> -->
+
+  <button type="submit" class="btn btn-primary mt-5 mb-5"> Add Product</button>
+</form>
+
+        
+    
+
+</div>
+</body>
+</html>

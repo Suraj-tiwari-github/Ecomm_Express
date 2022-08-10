@@ -1,0 +1,26 @@
+<% layout('layouts/boilerplate') %>
+
+    <a href="/product/new" class="btn btn-info">New Product</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+    <!-- <div class="d-flex justify-content-evenly p-4"> -->
+        
+        
+
+        <% for(p of prod) {%> 
+            <div class="col">
+<div class="card mb-3" style="width: 18rem;">
+  <img src="https://louisphilippe.imgix.net/img/app/product/7/739913-8288185.jpg?auto=format" class="card-img-top img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a href="product/<%= p._id %> "> <%= p.title %></a></h5>
+    <h6 class="card-title"> <%= p.price %> </h6>
+    <p class="card-text"> <%= p.description %></p>
+    <a href="product/<%= p._id %> "" class="btn btn-primary">Details</a>
+  </div>
+</div>
+</div>
+<% } %>
+
+    
+</div>
+    
+    
